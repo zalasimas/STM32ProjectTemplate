@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "ST-Link",
+            "cwd": "${workspaceFolder}",
+            "executable": "${command:cmake.launchTargetPath}",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "stlink",
+            "interface": "swd",
+            "showDevDebugOutput": "both",
+            "v1": false,                            // ST-Link version
+            "device": "STM32L432KC",                // MCU used [optional]
+            "serialNumber": "",                     // Set ST-Link ID if you use multiple at the same time [optional]
+            "runToEntryPoint": "main",              // Run to main and stop there [optional]
+            "svdFile": "STM32_svd/STM32L4x2.svd"    // SVD file to see registers [optional]
+        }
+    ]
+}
